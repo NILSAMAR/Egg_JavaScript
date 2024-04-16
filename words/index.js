@@ -20,3 +20,4 @@ const minMay = "La frase en minusculas  y Mayusculas es: "  +fraseMinusculas +" 
 // 3. Programa una impresión en la consola que muestre el mensaje de la variable minMay.
 alert(minMay);
 
+

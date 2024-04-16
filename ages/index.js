@@ -9,7 +9,8 @@ const edad = Number(prompt("Ingrese su edad"));
 //     alert("Es mayor de edad");
 // }
 
-// Actividad: Evaluación con estructura if
+// Actividad: Actividad: Evaluación con estructura if/else
+
 // if (edad > 18) {
 //     alert("Es mayor de edad");
 // } else {
