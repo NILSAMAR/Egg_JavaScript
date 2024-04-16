@@ -16,7 +16,7 @@ alert(mensajeCantidad);
 const fraseMinusculas = frase.toLowerCase();
 const fraseMayusculas = frase.toUpperCase();
 // 2. Declara una nueva variable minMay para “unir” las variables fraseMinusculas y fraseMinusculas
-const minMay = "La frase en minusculas  y Mayusculas es: "  +fraseMinusculas +fraseMayusculas;
+const minMay = "La frase en minusculas  y Mayusculas es: "  +fraseMinusculas +" " +fraseMayusculas;
 // 3. Programa una impresión en la consola que muestre el mensaje de la variable minMay.
 alert(minMay);
 
