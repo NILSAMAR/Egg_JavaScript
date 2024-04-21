@@ -11,36 +11,36 @@ los siguientes pasos:
 Product para agregar una propiedad privada supllier. A modo de ejemplo:
  */
 class Product {
-    constructor(id, title, price, stock, images, onsale, supplier) {
-        this.id = id;//cadena de texto
-        this.title = title;//cadena de texto
-        this.price = price;//Numerico
-        this.stock = stock;//Numerico
-        this.images = images;//[]
-        this.onsale = onsale;//boleano true or false
-        this._supplier = supplier;//agregar una propiedad privada supllier
-    }
+  constructor(id, title, price, stock, images, onsale, supplier) {
+    this.id = id;//cadena de texto
+    this.title = title;//cadena de texto
+    this.price = price;//Numerico
+    this.stock = stock;//Numerico
+    this.images = images;//[]
+    this.onsale = onsale;//boleano true or false
+    this._supplier = supplier;//agregar una propiedad privada supllier
+  }
 }
 
 /*3.Define el método getter y el método setter de esta propiedad. A modo de ejemplo:*/
-
+ 
 // Getter para obtener el proveedor (_supplier)
-    
-// get getSupplier() {
-//     return this._supplier;
-// }
+  
+get getSupplier() {
+    return this._supplier;
+}
 
-//   // Setter para establecer el proveedor (_supplier)
-// set setSupplier(newName) {
-//     this._supplier = newName;
-// }
+// Setter para establecer el proveedor (_supplier)
+set setSupplier(newName) {
+  this._supplier = newName;
+}
 
 
 const prod1 = new Product();
 const prod2 = new Product('fft', 'title', 2);
-const prod3 = new Product('fft', 'title', 2, 4, [], true);
+const prod3 = new Product('fft', 'title', 2, 4, [] ,true);
 /*4. Define la variable prod4 para crear una instancia de Product con todas las propiedades que requiere la clase. */
-const prod4 = new Product('fft', 'title', 2, 4, [], true,);
+const prod4 = new Product('fft', 'title', 2, 4, [] ,true,);
 /*5. Modifica el proveedor implementando el setter definido de prod4. */
 
 console.log(prod1);
@@ -53,3 +53,4 @@ console.log("On sale status of prod3:", prod3.onsale);
 console.log(prod4.getSupplier);
 
 /*7. Abre con live server el archivo index.html y verifica las salidas programadas */
+
