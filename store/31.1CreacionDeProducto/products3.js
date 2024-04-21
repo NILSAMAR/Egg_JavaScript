@@ -4,43 +4,43 @@
 /*-----------------------------------------------------------------------*/
 /*OBJETIVO:En esta actividad, vas a definir propiedades privadas de la clase Product y vas a crear 
 getters y setters para  poder leer y modificar las mismas. Para este ejercicio tienes que seguir 
-los siguientes pasos:
-*/
+los siguientes pasos:*/
+
+/*PASOS*/
+
 /*1. Desde Visual Studio Code, abre la carpeta store*/
 /*2. En products.js, modifica el constructor de la clase 
 Product para agregar una propiedad privada supllier. A modo de ejemplo:
  */
 class Product {
   constructor(id, title, price, stock, images, onsale, supplier) {
-    this.id = id;//cadena de texto
-    this.title = title;//cadena de texto
-    this.price = price;//Numerico
-    this.stock = stock;//Numerico
-    this.images = images;//[]
-    this.onsale = onsale;//boleano true or false
-    this._supplier = supplier;//agregar una propiedad privada supllier
+    this.id = id; // cadena de texto
+    this.title = title; // cadena de texto
+    this.price = price; // numérico
+    this.stock = stock; // numérico
+    this.images = images; // arreglo
+    this.onsale = onsale; // booleano
+    this._supplier = supplier; // propiedad privada
   }
-}
 
 /*3.Define el método getter y el método setter de esta propiedad. A modo de ejemplo:*/
- 
-// Getter para obtener el proveedor (_supplier)
-  
-get getSupplier() {
+
+  // Getter para obtener el proveedor (_supplier)
+  get getSupplier() {
     return this._supplier;
-}
+  }
 
-// Setter para establecer el proveedor (_supplier)
-set setSupplier(newName) {
-  this._supplier = newName;
+  // Setter para establecer el proveedor (_supplier)
+  set setSupplier(newSupplier) {
+    this._supplier = newSupplier;
+  }
 }
-
 
 const prod1 = new Product();
 const prod2 = new Product('fft', 'title', 2);
 const prod3 = new Product('fft', 'title', 2, 4, [] ,true);
 /*4. Define la variable prod4 para crear una instancia de Product con todas las propiedades que requiere la clase. */
-const prod4 = new Product('fft', 'title', 2, 4, [] ,true,);
+const prod4 = new Product('fft', 'title', 2, 4, [] ,true, 'suplier 1');
 /*5. Modifica el proveedor implementando el setter definido de prod4. */
 
 console.log(prod1);
