@@ -22,18 +22,18 @@ class Product {
     }
 }
 
-  /*3.Define el método getter y el método setter de esta propiedad. A modo de ejemplo:*/
+/*3.Define el método getter y el método setter de esta propiedad. A modo de ejemplo:*/
 
-  // Getter para obtener el proveedor (_supplier)
+// Getter para obtener el proveedor (_supplier)
     
-  get getSupplier() {
-    return this._supplier;
-}
+// get getSupplier() {
+//     return this._supplier;
+// }
 
-  // Setter para establecer el proveedor (_supplier)
-  set setSupplier(newName) {
-    this._supplier = newName;
-}
+//   // Setter para establecer el proveedor (_supplier)
+// set setSupplier(newName) {
+//     this._supplier = newName;
+// }
 
 
 const prod1 = new Product();
