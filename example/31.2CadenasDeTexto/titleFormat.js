@@ -2,27 +2,37 @@
 31.2 Actividad: Conteo de caracteres */
 /*-----------------------------------------------------------------------*/
 
-/*1.4. Define una función lengthOf que:
-
-Reciba como parámetro una cadena de texto
-Retorne la longitud de la cadena (propiedad length)
-Si recibe una cadena vacía, devuelva el mensaje "Invalid input".
+/*4.Define una función titleFormat que:
+-Reciba como parámetro una cadena de texto
+-Corte la cadena en: primera letra y resto del título (método charAt y slice)
+-La primera letra la convierta en mayúsculas (método toUpperCase)
+-El resto en minúsculas  (método toLowerCase)
+-Concatene ambas partes (con +)
+-Retorne la longitud de la cadena
 */
-
-//OPERACION: FUNCION 
-
-// Función que retorna la longitud de una cadena de texto
-function lengthOf(str) {
-    // Verifica si la cadena es vacía
-    if (str === '') {
-        return "Invalid input";
+function titleFormat(text) {
+    // Verificar que el texto no esté vacío para evitar errores
+    if (text.length === 0) {
+        return 0;
     }
-    // Retorna la longitud de la cadena
-    return str.length;
+    // Extraer la primera letra y el resto del título
+    let primeraLetra = text.charAt(0).toUpperCase(); // Convertir la primera letra a mayúscula
+    let restoDelTitulo = text.slice(1).toLowerCase(); // Convertir el resto a minúsculas
+    // Concatenar ambas partes para obtener el título formateado
+    let formattedTitle = primeraLetra + restoDelTitulo;
+    // Retornar la longitud de la cadena formateada
+    return formattedTitle.length;
 }
 
-/*Asegúrate de ejecutar la función y mostrar en la consola los resultados al menos tres veces */
-// Ejemplos de uso
-console.log("Longitud de de 'Hello, world' es:",lengthOf("Hello, world!")); // Retorna 13
-console.log("Longitud de 'JavaScript' es ",lengthOf ("JavaScript"));   // Retorna 10
-console.log("Longitud de '' es:" ,lengthOf(""));             // Retorna "Invalid input"
+// Ejemplo de uso
+let text = "hELLo World";
+let length = titleFormat(text); // El título formateado será "Hello world", la longitud es 11
+console.log("Longitud del título formateado:", length);
+
+
+/*5. Ejecuta la función y muestra en consola los resultados al menos tres veces.*/
+console.log('La longitud total de "hello world":',titleFormat('hello world')); 
+console.log('La longitud total de "HELLO world":',titleFormat('HELLO world'));
+console.log('La longitud total de "HellO WOrLd" :',titleFormat('HellO WOrLd'));//deben imprimir “Hello world
+
+/*6. Abre con live server el archivo index.html y verifica las salidas programadas.*/
