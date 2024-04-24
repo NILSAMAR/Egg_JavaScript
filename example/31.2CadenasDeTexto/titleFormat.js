@@ -31,8 +31,10 @@ console.log("Longitud del título formateado:", length);
 
 
 /*5. Ejecuta la función y muestra en consola los resultados al menos tres veces.*/
-console.log('La longitud total de "hello world":',titleFormat('hello world')); 
-console.log('La longitud total de "HELLO world":',titleFormat('HELLO world'));
-console.log('La longitud total de "HellO WOrLd" :',titleFormat('HellO WOrLd'));//deben imprimir “Hello world
+console.log('La longitud total de "hello world":', titleFormat('hello world'));
+console.log('La longitud total de "HELLO world":', titleFormat('HELLO world'));
+console.log('La longitud total de "HellO WOrLd" :', titleFormat('HellO WOrLd'));//deben imprimir “Hello world
 
 /*6. Abre con live server el archivo index.html y verifica las salidas programadas.*/
+
+
