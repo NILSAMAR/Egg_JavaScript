@@ -36,17 +36,16 @@ console.log(typeof cadena.split(" "));
 
 //reverse() invierte el orden de un array. El primer elemento se convierte en el último y viceversa.
 //Modifica el array original y devuelve una referencia al mismo array, pero invertido.
-console.log("REVERSE.: " + cadena.split(" ").cadena.reverse());
-console.log("REVERSE.: " + cadena.split("").cadena.reverse());
+console.log("REVERSE.: "+cadena.split(" ").cadena.reverse());
+console.log("REVERSE.: "+cadena.split(" ").cadena.reverse());
 
+const arreglo = ["hola","como","estas","mi","amigo"];
+console.log(arreglo);
 
+/**unshift */
+arreglo.unshift("¿¿¿")
 
-/*
-/**EJMEPLOS */
-// Invertir el orden de las palabras
-let cadena1 = "Hola mundo";
-let reversedWords = cadena1.split(" ").reverse(); // divide por espacios y luego invierte
-console.log("REVERSE (palabras): " + reversedWords.join(" ")); // unir palabras para mostrar como cadena
-// Invertir el orden de los caracteres
-let reversedChars = cadena1.split("").reverse(); // divide por caracteres y luego invierte
-console.log("REVERSE (caracteres): " + reversedChars.join("")); // unir caracteres para mostrar como cadena */
+/**push */
+arreglo.push("???")
+
+console.log(arreglo);
