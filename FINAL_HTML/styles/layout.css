@@ -107,7 +107,7 @@ nav {
   nav {
     width: 1080px;
   }
-} */
+}
 
 /* HERO SECTION */
 .hero-section {
@@ -165,7 +165,10 @@ main {
   padding: 20px;
 }
 
+/*DESABILITAMOS PARA USAR SOLO JS */
 /* Footer  */
+
+
 footer {
   min-height: 250px;
   background-color: #7525a7;
@@ -180,14 +183,17 @@ footer {
   justify-content: space-between;
   padding: 10px;
 }
+
 .footer-ul {
   width: 170px;
   list-style-type: none;
   padding: 10px;
 }
+
 .footer-li {
   padding: 5px 0;
 }
+
 .footer-main-item {
   font-weight: bold;
   padding-bottom: 20px;

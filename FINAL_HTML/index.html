@@ -11,9 +11,14 @@
     />
     <link rel="stylesheet" href="./styles/layout.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <script src="./scripts/products5.js" defer></script>
+    <script src="./scripts/products.js" defer></script>
     <script src="./scripts/layout.js" defer></script>
     <script src="./scripts/filterProducts.js" defer></script>
+    <script src="./scripts/productCards.js" defer></script> 
+    <!-- Orden de ejecución: Los scripts con defer se ejecutan en el orden en que aparecen en 
+      el HTML, pero después de que el documento se haya cargado completamente. -->
+    <input type="text" placeholder="Search" onkeyup="captureText()" />
+    
     <title>Tienda Virtual</title>
   </head>
   <body>
@@ -88,7 +93,7 @@
     </section>
     <main>
       <div class="product-container" id="products">
-        <a class="product-card" href="./details.html">
+        <!-- <a class="product-card" href="./details.html">
           <img
             class="product-img"
             src="https://i.postimg.cc/kX8PKZpq/ipad2.jpg"
@@ -195,12 +200,12 @@
               Incluye impuesto País y percepción AFIP
             </div>
           </div>
-        </a>
+        </a> -->
       </div>
     </main>
     <footer>
-      <div id="footer" class="footer-container">
-        <ul class="footer-ul">
+      <div id="footer_pie" class="footer-container">
+        <!-- <ul class="footer-ul">
           <li class="footer-main-item">
             <a class="footer-a" href="./index.html">Ofertas</a>
           </li>
@@ -254,7 +259,7 @@
           <li class="footer-main-item">
             <a class="footer-a" href="./index.html">Garantía</a>
           </li>
-        </ul>
+        </ul> -->
       </div>
       <div class="footer-copyright">Curso de HTML + CSS 2023</div>
     </footer>

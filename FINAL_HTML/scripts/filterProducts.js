@@ -17,6 +17,6 @@ Para este ejercicio tienes que seguir los siguientes pasos:
 presione una tecla del teclado, deberá ejecutar la función captureText. A modo de ejemplo:
 */
 function captureText() {
-    console.log("capturado");
+    console.log("capturado");//Crea el archivo filterProducts.js en la carpeta scripts y conectalo con la vista principal. 
 }
-<input type="text" placeholder="Search" onkeyup="captureText()" />
+//!comentar

@@ -1,4 +1,3 @@
-/*
 const producto1 = {
   nombre: "celular",
   precio: 100000,
@@ -63,9 +62,3 @@ console.log("Title of prod2:", prod2.title);
 console.log("On sale status of prod3:", prod3.onsale);
 console.log("Suplier of prod4:",prod4.getSupplier);
 console.log("Suplier of prod5:",prod5.stock); //new product
-
-*/
-////Obtenemos el elemento div mediante su ID
-var miDiv = document.getElementById('navbar');
-// Modificamos el atributo "id" para cambiar su valor
-miDiv.setAttribute('id', 'nav');

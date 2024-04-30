@@ -26,3 +26,10 @@ function lengthOf(str) {
 console.log("Longitud de de 'Hello, world' es:",lengthOf("Hello, world!")); // Retorna 13
 console.log("Longitud de 'JavaScript' es ",lengthOf ("JavaScript"));   // Retorna 10
 console.log("Longitud de '' es:" ,lengthOf(""));             // Retorna "Invalid input"
+
+
+
+
+
+
+
