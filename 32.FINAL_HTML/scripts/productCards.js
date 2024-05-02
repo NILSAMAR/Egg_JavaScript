@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------
-33.3.1   Actividad: Renderizando los productos con un template string*/
+32.3.1   Actividad: Renderizando los productos con un template string*/
 /*-----------------------------------------------------------------------*/
 /*OBJETIVO:En esta actividad, vas a mejorar la vista principal del proyecto store de 
 las secciones anteriores para renderizar las tarjetas de producto con métodos del DOM. 
@@ -143,51 +143,7 @@ let productsTemplate = `
 productsSelector.innerHTML = productsTemplate;
 
 /*
-8. Abre con live server el archivo index.html y observa las tarjetas de producto.
+🍁 8. Abre con live server el archivo index.html y observa las tarjetas de producto.
 9. Programa y verifica la vista la cantidad de veces que sea necesario para que las tarjetas se rendericen y funcionen correctamente.
  */
 
-/*-----------------------------------------------------------------------
-33.3.2   Actividad: Renderizando los productos con un template string*/
-/*-----------------------------------------------------------------------*/
-/*Las tarjetas simplemente fueron “impresas” en la vista, pero siguen siendo datos estáticos. En esta actividad, 
-vas a mejorar la vista principal del proyecto store para renderizar las tarjetas de producto de forma dinámica. 
-Para este ejercicio vas a seguir los siguientes pasos:*/
-
-/*
-10. Abre productCards.js y define una función createCard para que reciba como parámetro un objeto y devuelva un 
-template string con sólo una tarjeta de producto. El objeto a recibir por la función será un producto con todas 
-las propiedades definidas en la clase. 
-11. Modifica cada dato “estático” de la tarjeta por la correspondiente propiedad del objeto product. Recuerda que en 
-el template string se “invocan” variables de js con ${ }. A modo de ejemplo:
-*/
-
-function createCard() {
-    return `
-    
-    `
-}
-
-// Definir la función createCard que recibe un objeto 'product' y devuelve un template string para la tarjeta de producto
-function createCard(product) {
-    return `
-    <a class="product-card" href="./details.html">
-    <img
-      class="product-img"
-      src="https://i.postimg.cc/kX8PKZpq/ipad2.jpg"
-      alt="iPad Pro 12.9"
-    />
-    <div class="product-info">
-      <span class="product-title">iPad Pro 12.9</span>
-      <span class="product-description">Silver</span>
-      <div class="product-price-block">
-        <span class="product-price">900000</span>
-        <span class="product-discount">50% Off</span>
-      </div>
-      <div class="product-tax-policy">
-        Incluye impuesto País y percepción AFIP
-      </div>
-    </div>
-  </a>
-    `;
-}
