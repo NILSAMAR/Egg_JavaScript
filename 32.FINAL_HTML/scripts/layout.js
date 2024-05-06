@@ -3,6 +3,7 @@ var miDiv = document.getElementById('navbar');
 // Modificamos el atributo "id" para cambiar su valor
 miDiv.setAttribute('id', 'nav');
 
+
 /*-----------------------------------------------------------------------
 32.1 Actividad: Renderizando la barra de navegación del store */
 /*-----------------------------------------------------------------------*/
@@ -18,31 +19,29 @@ siguientes pasos:✅ */
 💧4. Abre el archivo layout.js y define una variable navSelector, para seleccionar con el método getElementById la 
 etiqueta correspondiente donde se renderizará la barra de navegación.*/
 
-const navSelector = document.getElementById("nav"); // Aquí definimos variable navSelector
-
-
+const navSelector = document.getElementById("nav"); // Aquí definimos variable navSelector //SELECTOR
 /*
 💧5. Crea una variable options, para guardar un array de objetos. Cada objeto representará los datos de un 
 botón con las propiedades:
-- text: para el texto del botón
-- linkTo: para el link de direccionamiento
+- 🌍text: para el texto del botón
+- 🌍linkTo: para el link de direccionamiento
 Se definieron algunas propiedades para que usen como ejemplo: */
 
 //creando una variable options y la modificamos para el footer
 const options = [ //! guardar un array de objetos
     { title: "Ofertas de la semana", linkTo: "./outlet.html" },
     { title: "Como Comprar", linkTo: "./how.html" },
-    { title: "Taxis", linkTo: "./taxs.html" },
+    { title: "Costos y Tarifas", linkTo: "./costos.html" },
     { title: "Pedidos", linkTo: "./orders.html" },
     { title: "Garantia", linkTo: "./warranty.html" },
 ];
 
 /*
 💧6. Itera con for-of, de manera que cada iteración:
-- Crea las etiquetas correspondientes con el método createElement y las propiedades/estilos correspondientes.
-- Asigna el texto de la propiedad title de cada objeto con la propiedad textContent
-- Define la propiedad href hacia la propiedad linkTo de cada objeto.
-- Luego “agregar un hijo” al navSelector.*/
+- 🌍Crea las etiquetas correspondientes con el método createElement y las propiedades/estilos correspondientes.
+- 🌍Asigna el texto de la propiedad title de cada objeto con la propiedad textContent
+- 🌍Define la propiedad href hacia la propiedad linkTo de cada objeto.
+- 🌍Luego “agregar un hijo” al navSelector.*/
 for (let option of options) {
     const anchor = document.createElement("a"); // Creación del elemento "a"
     anchor.className = "nav-a"; // Agregar clase para estilo
@@ -71,25 +70,25 @@ Para este ejercicio tienes que seguir los siguientes pasos:✅ */
 //Obtenemos el elemento div mediante su ID
 var miFooter = document.getElementById('footer_pie');
 // Modificamos el atributo "id" para cambiar su valor
-miFooter.setAttribute('id', 'footer');
+miFooter.setAttribute('id', 'footer'); //Asignar a la etiqueta id="footer"
 
 /*
 💧4. Abre el archivo layout.js y define una variable footerSelector, para seleccionar con el método getElementById la 
 etiqueta correspondiente donde se renderizará el pie de página.*/
 //const footerSelector = document.querySelector("#footer");
-const footerSelector = document.getElementById("footer");
+const footerSelector = document.getElementById("footer"); //SELECTOR
 
 /*
 💧5. Modifica la variable options, para agregar a cada objeto la propiedad opts (con las diferentes opciones de 
 cada columna). Se definieron algunas propiedades para que usen como ejemplo: */
 
 const options_Footer = [
-    { title: "Productos", opts: ["Laptops", "Audio", "Auriculares"], linkTo: "./products.html" },
+    { title: "Productos", opts: ["Laptops", "Audio", "Auriculares", "Tablets"], linkTo: "./products.html" },
     { title: "Pagos", opts: ["Formas de pago", "PayPal", "Costos y Tarifas"], linkTo: "./pagos.html" },
-    { title: "Facturación", opts: ["Impuestos", "Garantías"], linkTo: "./facturacion.html" },
-    { title: "Envíos", opts: ["Pedir Nuevamente", "Más envíos"], linkTo: "./envios.html" },
-    { title: "Redes", opts: ["Facebook", "Gmail"], linkTo: "./redes.html" },
-    { title: "Contactos", opts: ["Teléfono", "Clientes"], linkTo: "./contactos.html" },
+    { title: "Facturación", opts: ["Impuestos", "Garantías", "Facturas"], linkTo: "./facturacion.html" },
+    { title: "Envíos", opts: ["Pedir Nuevamente", "Más envíos", "Almacen"], linkTo: "./envios.html" },
+    { title: "Redes", opts: ["Facebook", "Gmail", "Instagram"], linkTo: "./redes.html" },
+    { title: "Contactos", opts: ["Teléfono", "Clientes","Empresas"], linkTo: "./contactos.html" },
 ];
 
 /**
@@ -98,10 +97,9 @@ const options_Footer = [
 -Cada titulo debe linkear hacia la propiedad definida en linkTo,
 -Las opciones de cada columna se deben mapear con otro for of.
 -Luego “agregar los hijos” correspondientes al footerSelector
-
-6. Abre con live server el archivo index.html y observa la barra de navegación. 
-7. Programa y verifica la vista la cantidad de veces que sea necesario para que la barra de navegación se 
-renderice y funcione correctamente.
+💧6. Abre con live server el archivo index.html y observa la barra de navegación. 
+💧7. Programa y verifica la vista la cantidad de veces que sea necesario para que la barra de navegación se renderice 
+y funcione correctamente.
  */
 
 for (let option_Footer of options_Footer) {

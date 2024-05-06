@@ -5,16 +5,15 @@ const productsSelector = document.getElementById("products");
 function createCard(product) {
     return `
       <a class="product-card" href="./details.html?id=${product.id}">
-        <img class="product-img" src="${product.images[0]}" alt="${product.title}" />
+        <img class="product-img" src="${product.images[0]}" alt="${product.id}" />
         <div class="product-info">
           <span class="product-title">${product.title}</span>
-          <span class="product-description">${product.description}</span>
+          <span class="product-description">${product.supplier}</span>
           <div class="product-price-block">
             <span class="product-price">$${product.price}</span>
-            <span class="product-discount">${product.discount}% Off</span>
+            <span class="product-discount">${product.onsale}% Off</span>
           </div>
-          <div class="product-tax-policy">
-            Incluye impuesto País y percepción AFIP
+          <div class="product-tax-policy">${product.taxPolicy}</div>
           </div>
         </div>
       </a>
@@ -22,18 +21,15 @@ function createCard(product) {
 }
 
 // Inicializa la plantilla de productos como cadena vacía
-let productsTemplate = "";
-
+//let productsTemplate = "";
 // Itera sobre los productos y agrega las tarjetas a la plantilla
-for (const product of products) {
-    productsTemplate += createCard(product); // Concatenar con "+=" para agregar a la plantilla
-}
-
+//for (const product of products) {
+//    productsTemplate += createCard(product); // Concatenar con "+=" para agregar a la plantilla
+//}
 // Inserta las tarjetas de productos en el selector correspondiente
-productsSelector.innerHTML = productsTemplate;
-
-// Ahora puedes abrir el archivo index.html con Live Server y observar si las tarjetas se renderizan y se muestran correctamente.
-
+//productsSelector.innerHTML = productsTemplate;
+//Ahora puedes abrir el archivo index.html con Live Server y observar si las tarjetas 
+//se renderizan y se muestran correctamente.
 
 /*-----------------------------------------------------------------------
 32.3.3  Actividad: Función de renderizado*/
@@ -61,11 +57,11 @@ function printCards(arrayOfProducts, idSelector) {//define PRINTCARDS
 }
 
 /*
-Luego es necesario invocar a la función pasando el array de productos y el id del selector.  A modo de ejemplo:*/
+💧Luego es necesario invocar a la función pasando el array de productos y el id del selector.  A modo de ejemplo:*/
 printCards(products, "products");//invocar pasando el array 
 
 /*
-Abre con live server el archivo index.html y observa las tarjetas de producto.
-Programa y verifica la vista la cantidad de veces que sea necesario para que las tarjetas se rendericen y funcionen correctamente.*/
+💧Abre con live server el archivo index.html y observa las tarjetas de producto.
+💧Programa y verifica la vista la cantidad de veces que sea necesario para que las tarjetas se rendericen y funcionen correctamente.*/
 
 
