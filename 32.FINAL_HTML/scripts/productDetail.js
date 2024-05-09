@@ -94,8 +94,8 @@ function printDetails(id) {
           </ul>
           <div class="checkout-process">
             <div class="top">
-              <input type="number" min="1" value="1" />
-              <button type="button" class="cart-btn">
+              <input type="number" min="1" value="1" onclick="changePrice(event)" />
+              <button type="button" class="cart-btn" onclick="saveProduct(${product.id})">
                 Añadir al Carrito
               </button>
             </div>
@@ -125,9 +125,8 @@ colores del producto. Para este ejercicio tienes que:
 💧3.Luego de “mapear”, une todos los elementos del array transformado con join() para retornar un único template. A modo de ejemplo*/
 
 /*-----------------------------------------------------------------------
-34.5  ✏️ Actividad: Programar las miniaturas de la vista de detalle */
-/*-----------------------------------------------------------------------*/
-/*
+35.1  ✏️ Actividad: Programar las miniaturas de la vista de detalle */
+/*-----------------------------------------------------------------------
 💧1.Desde Visual Studio Code, abre la carpeta store y luego el archivo productDetail.js
 💧2.Modifica la función printDetails para que cada imagen de la miniatura tenga asignado un evento de click “en línea”. Cada click en una miniatura debe ejecutar una función que actualice la foto que renderiza la foto agrandada. Utiliza el atributo onclick para que ejecute la función changeMini.
 💧3.Define la función changeMini para que:
@@ -136,10 +135,9 @@ colores del producto. Para este ejercicio tienes que:
       🌍3.seleccione el id de la imagen agrandada
       🌍4.actualice la vista con la imagen agrandada seleccionada
 A modo de ejemplo: */
-/**
- * Definir función para cambiar imagen
- */
-function changeMini(event){
+
+/*** Definir función para cambiar imagen*/
+function changeMini(event) {
   //Traer el src de la imagen seleccionada
   const selectedSrc = event.target.src;
   //Traer el selector de la imagen grande
@@ -154,9 +152,8 @@ printDetails(id);
 
 
 /*-----------------------------------------------------------------------
-34.6  ✏️ Actividad: Calcular el subtotal a pagar */
-/*-----------------------------------------------------------------------*/
-/*
+35.2  ✏️ Actividad: Calcular el subtotal a pagar */
+/*-----------------------------------------------------------------------
 💧1.Desde Visual Studio Code, abre la carpeta store y luego el archivo productDetail.js
 💧2.Modifica la función printDetails para que el input numérico de la cantidad tenga asignado un evento de cambio “en línea”. 
 Cada cambio en las unidades a comprar debe ejecutar una función que actualice el subtotal a pagar. Utiliza el atributo onchange 
@@ -170,10 +167,8 @@ para que ejecute la función changeSubtotal.
     🌍6.actualice la vista con la imagen agrandada seleccionada
 💧4.Programa y verifica la vista la cantidad de veces que sea necesario para que la vista se renderice y funcione correctamente.*/
 
-/**
- * Definir funcion para cambiar precio
- */
-function changePrice(event){
+/*** Definir funcion para cambiar precio*/
+function changePrice(event) {
   //traer la cantidad del input de tipo number
   const quantity = event.target.value;
   //traer el producto
@@ -183,3 +178,82 @@ function changePrice(event){
   //cambiar el precio total
   priceSelector.innerHTML = `$${quantity * product.price}`;
 }
+
+/*-----------------------------------------------------------------------
+36.1  ✏️ Actividad: Agregar un producto al carrito
+/*-----------------------------------------------------------------------/*
+🍁Cada vez que un usuario realiza un click en el botón “añadir al carrito”: el producto junto con las especificaciones 
+seleccionadas (como la cantidad y color) se guardan en la base de datos de la aplicación. 
+🍁Por el momento no vas a trabajar con bases de datos, pero el localStorage es una buena aproximación. Para este ejercicio 
+tienes que seguir los siguientes pasos:
+
+💧1.Desde Visual Studio Code, abre la carpeta egg_js y luego el archivo productDetail.js
+💧2.Modifica la función printDetails para que el botón “añadir” tenga asignado un evento de click “en línea”. 
+Cada click del botón debe ejecutar una función que guarde los datos más importantes del producto. 
+Utiliza el atributo onclick para que ejecute la función saveProduct. A modo de ejemplo:
+💧3.Define la función saveProduct para que:
+        🌍1. dependa del id del botón
+        🌍2. busque un producto con el id
+        🌍3.defina un objeto con las propiedades especificadas en la compra
+        🌍4.convierta a JSON el objeto
+        🌍5.guarde el objeto en la memoria del navegador
+
+💡Buscar la forma de capturar todos los datos del producto agregado.
+💧5. Programa y verifica la vista la cantidad de veces que sea necesario para que la vista se renderice y funcione correctamente.*/
+
+
+/*** Definir función para añadir al carrito*/
+function saveProduct(id) {
+  //traer el producto
+  const product = products.find(product => product.id == id);
+  //defina un objeto con las propiedades especificadas en la compra
+  const objectProduct = {
+    id: product.id,
+    title: product.title,
+    price: product.price,
+    color: document.querySelector("#color").value,
+    image: product.images[0],
+    quantity: document.querySelector("input").value,
+  };
+
+
+/*-----------------------------------------------------------------------
+36.2  ✏️ Actividad: Agregar un producto al carrito
+/*-----------------------------------------------------------------------
+🍁La función saveProduct guarda en la clave cart del localStorage un producto. Cuando quieres agregar otro producto,
+la funcionalidad desarrollada “sobre-escribe” la clave cart con el producto recientemente “añadido” (borrando los 
+datos del producto añadido con anterioridad). 
+🍁Es necesario modificar la función para que guarde todos los productos. Para este ejercicio tienes que seguir 
+los siguientes pasos:
+
+💧1.Desde Visual Studio Code, abre la carpeta egg_js y luego el archivo productDetail.js
+💧2.Modifica la función saveProduct para que además de lo que ya hacía:
+        🌍1. busque y verifique si existe la clave cart en localstorage
+        🌍2. si la clave existe debe agregar el nuevo producto al array de productos y guardarlo en el storage
+        🌍3. si la clave no existe debe crear un array con el producto y guardarlo en el storage
+💧4.Programa y verifica la vista la cantidad de veces que sea necesario para que la vista se renderice y funcione correctamente.*/
+
+  // Verificar si la clave 'cart' existe en localStorage
+  if (localStorage.getItem('cart')) {
+    // Si existe, obtener el contenido y convertirlo de nuevo en un array
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    // Agregar el nuevo producto al array
+    cart.push(objectProduct);
+    // Guardar el array actualizado en el storage
+    localStorage.setItem("cart", JSON.stringify(cart));
+  } else {
+    // Si no existe, crear un nuevo array con el producto y guardarlo en el storage
+    let cart = [objectProduct];
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }
+
+}
+
+printDetails(id);
+
+
+
+
+
+
+

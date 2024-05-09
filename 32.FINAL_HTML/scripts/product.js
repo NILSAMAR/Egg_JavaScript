@@ -21,12 +21,12 @@ class Product {
 🍁Define los arrays de imágenes de cada producto creado. Al menos tres fotos para dos productos y el resto dos.
 */
 //INSTANCIAS
-const prod1 = new Product("001", "CAMARA INSTAX", 599.00, 20, ["./assets/cam1.png", "./assets/cam1_2.png", "./assets/cam1_3.png"], "50", "CAMARA INSTAX SQUARE SQ1 AZUL GLACIAR", ["black", "white"], "Cámara Instax Square SQ1| Color: Azul glaciar | Dimensiones: 130,7 × 118,6 × 57,5 mm| Peso: 390 gr. (sin pilas, correa ni película) | Imágenes referenciales ","Incluye impuesto País y percepción AFIP");
-const prod2 = new Product("002", "Macbook2 Pro 15'4", 56000, 20, ["./assets/mock1.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", "Mac", ["black", "white"], "Space Gray","Incluye impuesto País y percepción AFIP");
-const prod3 = new Product("003", "Macbook3 Pro 15'4", 28000, 20, ["./assets/mock2.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", "Mac", ["black", "white"], "Space Gray","Incluye impuesto País y percepción AFIP");
-const prod4 = new Product('Id del array', 'iPad Pro 12.9', 10000, 4, ["./assets/mock1.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", ["Blanco","Rosado", "Lila"],["Blanco","Rosado", "Lila"], "Hermosa Tablet", "Incluye impuesto País y percepción AFIP");
-const prod5 = new Product('Id del array', 'iPad Pro 12.9', 8000, 4, ["./assets/mock2.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", ["Blanco","Rosado", "Lila"],["Blanco", "Rosado", "Lila"], "Hermosa Tablet", "Incluye impuesto País y percepción AFIP");
-const prod6 = new Product('Id del array', 'iPad Pro 12.9', 4000, 4, ["./assets/mock1.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", ["Blanco","Rosado", "Lila"],["yellow","red"], "Hermosa Tablet", "Incluye impuesto País y percepción AFIP");
+const prod1 = new Product("001", "CAMARA INSTAX", 99, 20, ["./assets/cam1.png", "./assets/cam1_2.png", "./assets/cam1_3.png"], "50", "CAMARA INSTAX SQUARE SQ1 AZUL GLACIAR", ["black", "white"], "Cámara Instax Square SQ1| Color: Azul glaciar | Dimensiones: 130,7 × 118,6 × 57,5 mm| Peso: 390 gr. (sin pilas, correa ni película) | Imágenes referenciales ","Incluye impuesto País y percepción AFIP");
+const prod2 = new Product("002", "Macbook2 Pro 15'4",22, 20, ["./assets/mock1.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", "Mac", ["black", "white"], "Space Gray","Incluye impuesto País y percepción AFIP");
+const prod3 = new Product("003", "Macbook3 Pro 15'4", 40, 20, ["./assets/mock2.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", "Mac", ["black", "white"], "Space Gray","Incluye impuesto País y percepción AFIP");
+const prod4 = new Product('Id del array', 'iPad Pro 12.9', 100, 4, ["./assets/mock1.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", ["Blanco","Rosado", "Lila"],["Blanco","Rosado", "Lila"], "Hermosa Tablet", "Incluye impuesto País y percepción AFIP");
+const prod5 = new Product('Id del array', 'iPad Pro 12.9', 120, 4, ["./assets/mock2.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", ["Blanco","Rosado", "Lila"],["Blanco", "Rosado", "Lila"], "Hermosa Tablet", "Incluye impuesto País y percepción AFIP");
+const prod6 = new Product('Id del array', 'iPad Pro 12.9', 800, 4, ["./assets/mock1.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", ["Blanco","Rosado", "Lila"],["yellow","red"], "Hermosa Tablet", "Incluye impuesto País y percepción AFIP");
 
 //PRODUCTOS
 console.log(prod1);
