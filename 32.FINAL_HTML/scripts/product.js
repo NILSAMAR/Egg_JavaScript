@@ -25,8 +25,8 @@ const prod1 = new Product("001", "CAMARA INSTAX", 99, 20, ["./assets/cam1.png", 
 const prod2 = new Product("002", "Macbook2 Pro 15'4",22, 20, ["./assets/mock1.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", "Mac", ["black", "white"], "Space Gray","Incluye impuesto País y percepción AFIP");
 const prod3 = new Product("003", "Macbook3 Pro 15'4", 40, 20, ["./assets/mock2.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", "Mac", ["black", "white"], "Space Gray","Incluye impuesto País y percepción AFIP");
 const prod4 = new Product('Id del array', 'iPad Pro 12.9', 100, 4, ["./assets/mock1.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", ["Blanco","Rosado", "Lila"],["Blanco","Rosado", "Lila"], "Hermosa Tablet", "Incluye impuesto País y percepción AFIP");
-const prod5 = new Product('Id del array', 'iPad Pro 12.9', 120, 4, ["./assets/mock2.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", ["Blanco","Rosado", "Lila"],["Blanco", "Rosado", "Lila"], "Hermosa Tablet", "Incluye impuesto País y percepción AFIP");
-const prod6 = new Product('Id del array', 'iPad Pro 12.9', 800, 4, ["./assets/mock1.jpg", "./assets/mock2.jpg", "./assets/cel1.png"], "50", ["Blanco","Rosado", "Lila"],["yellow","red"], "Hermosa Tablet", "Incluye impuesto País y percepción AFIP");
+const prod5 = new Product('Id del array', 'CARTERAS Y ACCESORIOS', 600, 4, ["./assets/cartera1.png", "./assets/cartera2.png", "./assets/cartera3.png"], "50", "SET MALETÍN + MOCHILA + LONCHERA + CARTUCHERA INDEX NEGRO Y ROSADO PACK X4",["Blanco", "Rosado", "Lila"], "Carteras", "Incluye impuesto País y percepción AFIP");
+const prod6 = new Product('Id del array', 'TABLET APPLE', 1500, 4, ["./assets/apple3.png", "./assets/apple2.png", "./assets/apple1.png"], "50", ["Blanco","Rosado", "Lila"],["yellow","red", "lila"], "Tablet Apple", "Incluye impuesto País y percepción AFIP");
 
 //PRODUCTOS
 console.log(prod1);

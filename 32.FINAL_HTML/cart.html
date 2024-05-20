@@ -8,9 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles/layout.css" />
-  <link rel="stylesheet" href="./styles/index.css" />
-  <script src="./scripts/layout.js" defer></script>
-  <script src="./scripts/cart.js" defer></script>
+  <link rel="stylesheet" href="./styles/cart.css" />
   <!-- Orden de ejecución: Los scripts con defer se ejecutan en el orden en que aparecen en 
       el HTML, pero después de que el documento se haya cargado completamente. -->
   <title>Tienda Virtual</title>
@@ -47,202 +45,28 @@
       </ul>
     </div>
     <nav id="navbar">
-      <!-- <li class="nav-li">
-          <a class="nav-a" href="#">Ofertas</a>
-        </li>
-        <li class="nav-li">
-          <a class="nav-a" href="#">Cómo comprar</a>
-        </li>
-        <li class="nav-li">
-          <a class="nav-a" href="#">Costos y tarifas</a>
-        </li>
-        <li class="nav-li">
-          <a class="nav-a" href="#">Mis pedidos</a>
-        </li>
-        <li class="nav-li">
-          <a class="nav-a" href="#">Garantía</a>
-        </li> -->
     </nav>
   </header>
   <section class="hero-section">
     <article class="hero-title">
-        <span class="hero-span">mi</span>
-        <span class="hero-span">carrito</span>
+      <span class="hero-span">mi</span>
+      <span class="hero-span">carrito</span>
     </article>
   </section>
   <main>
-    <div class="product-container" id="products">
-      <!-- <a class="product-card" href="./details.html">
-          <img
-            class="product-img"
-            src="https://i.postimg.cc/kX8PKZpq/ipad2.jpg"
-            alt="iPad Pro 12.9"
-          />
-          <div class="product-info">
-            <span class="product-title">iPad Pro 12.9</span>
-            <span class="product-description">Silver</span>
-            <div class="product-price-block">
-              <span class="product-price">900000</span>
-              <span class="product-discount">50% Off</span>
-            </div>
-            <div class="product-tax-policy">
-              Incluye impuesto País y percepción AFIP
-            </div>
-          </div>
-        </a>
-        <a class="product-card" href="./details.html">
-          <img
-            class="product-img"
-            src="https://i.postimg.cc/kX8PKZpq/ipad2.jpg"
-            alt="iPad Pro 12.9"
-          />
-          <div class="product-info">
-            <span class="product-title">iPad Pro 12.9</span>
-            <span class="product-description">Silver</span>
-            <div class="product-price-block">
-              <span class="product-price">900000</span>
-              <span class="product-discount">50% Off</span>
-            </div>
-            <div class="product-tax-policy">
-              Incluye impuesto País y percepción AFIP
-            </div>
-          </div>
-        </a>
-        <a class="product-card" href="./details.html">
-          <img
-            class="product-img"
-            src="https://i.postimg.cc/kX8PKZpq/ipad2.jpg"
-            alt="iPad Pro 12.9"
-          />
-          <div class="product-info">
-            <span class="product-title">iPad Pro 12.9</span>
-            <span class="product-description">Silver</span>
-            <div class="product-price-block">
-              <span class="product-price">900000</span>
-              <span class="product-discount">50% Off</span>
-            </div>
-            <div class="product-tax-policy">
-              Incluye impuesto País y percepción AFIP
-            </div>
-          </div>
-        </a>
-        <a class="product-card" href="./details.html">
-          <img
-            class="product-img"
-            src="https://i.postimg.cc/kX8PKZpq/ipad2.jpg"
-            alt="iPad Pro 12.9"
-          />
-          <div class="product-info">
-            <span class="product-title">iPad Pro 12.9</span>
-            <span class="product-description">Silver</span>
-            <div class="product-price-block">
-              <span class="product-price">900000</span>
-              <span class="product-discount">50% Off</span>
-            </div>
-            <div class="product-tax-policy">
-              Incluye impuesto País y percepción AFIP
-            </div>
-          </div>
-        </a>
-        <a class="product-card" href="./details.html">
-          <img
-            class="product-img"
-            src="https://i.postimg.cc/kX8PKZpq/ipad2.jpg"
-            alt="iPad Pro 12.9"
-          />
-          <div class="product-info">
-            <span class="product-title">iPad Pro 12.9</span>
-            <span class="product-description">Silver</span>
-            <div class="product-price-block">
-              <span class="product-price">900000</span>
-              <span class="product-discount">50% Off</span>
-            </div>
-            <div class="product-tax-policy">
-              Incluye impuesto País y percepción AFIP
-            </div>
-          </div>
-        </a>
-        <a class="product-card" href="./details.html">
-          <img
-            class="product-img"
-            src="https://i.postimg.cc/kX8PKZpq/ipad2.jpg"
-            alt="iPad Pro 12.9"
-          />
-          <div class="product-info">
-            <span class="product-title">iPad Pro 12.9</span>
-            <span class="product-description">Silver</span>
-            <div class="product-price-block">
-              <span class="product-price">900000</span>
-              <span class="product-discount">50% Off</span>
-            </div>
-            <div class="product-tax-policy">
-              Incluye impuesto País y percepción AFIP
-            </div>
-          </div>
-        </a> -->
-    </div>
-    <article class="product-cart" id="total"></article>
+    <div class="container"></div>
+    
+    <article class="cart-resume" id="total">
+      
+    </article>
   </main>
   <footer>
     <div id="footer_pie" class="footer-container">
-      <!-- <ul class="footer-ul">
-          <li class="footer-main-item">
-            <a class="footer-a" href="./index.html">Ofertas</a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-a" href="./index.html">Laptops</a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-a" href="./index.html">Audio</a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-a" href="./index.html">Auriculares</a>
-          </li>
-        </ul>
-        <ul class="footer-ul">
-          <li class="footer-main-item">
-            <a class="footer-a" href="./index.html">Cómo comprar</a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-a" href="./index.html">Formas de pago</a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-a" href="./index.html">Envios</a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-a" href="./index.html">Devoluciones</a>
-          </li>
-        </ul>
-        <ul class="footer-ul">
-          <li class="footer-main-item">
-            <a class="footer-a" href="./index.html">Costos y tarifas</a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-a" href="./index.html">Impuestos</a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-a" href="./index.html">Facturación</a>
-          </li>
-        </ul>
-        <ul class="footer-ul">
-          <li class="footer-main-item">
-            <a class="footer-a" href="./index.html">Mis pedidos</a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-a" href="./index.html">Pedir nuevamente</a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-a" href="./index.html">Lista de deseos</a>
-          </li>
-        </ul>
-        <ul class="footer-ul">
-          <li class="footer-main-item">
-            <a class="footer-a" href="./index.html">Garantía</a>
-          </li>
-        </ul> -->
     </div>
     <div class="footer-copyright">Curso de HTML + CSS 2023</div>
   </footer>
+  <script src="./scripts/layout.js"></script>
+  <script src="./scripts/cart.js"></script>
+  <script src="./scripts/buy.js"></script>
 </body>
-
 </html>

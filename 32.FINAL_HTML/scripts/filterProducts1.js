@@ -1,4 +1,3 @@
-
 function captureText() {//FUNCION CAPTURETEXT
     console.log("capturado");//IMPRIME CONSOLA CAPTURADO
 }

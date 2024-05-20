@@ -1,4 +1,3 @@
-
 // Función para capturar el texto del evento de teclado
 function captureText(event) { // Ahora la función recibe un parámetro 'event'
     console.log("Tecla presionada:", event.key); // Muestra la tecla presionada
@@ -30,8 +29,7 @@ searchSelector.addEventListener("keyup", event => captureText(event));
 💧Modifica la función captureText para que reciba el evento como parámetro e imprime 
 por consola algunas propiedades importantes. 
 💧Abre con live server el archivo index.html y observa la correcta impresión por 
-consola de cada tecla presionada. A modo de ejemplo:
- */
+consola de cada tecla presionada. A modo de ejemplo: */
 
 
 

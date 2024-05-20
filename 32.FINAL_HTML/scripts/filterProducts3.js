@@ -31,5 +31,3 @@ el filtro funcione correctamente.*/
 let searchSelector = document.querySelector("#search");
 //Agregar evento
 searchSelector.addEventListener("keyup", event=>captureText(event));
-
-
