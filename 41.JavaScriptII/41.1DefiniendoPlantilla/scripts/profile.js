@@ -14,7 +14,7 @@
 //💧4.Define cinco variables que contengan datos personales. (como nombre, edad, profesión, ubicación, hobby)
 const nombre = "Nilsa";
 const edad = 25;
-const profesion = "Ingeniera Mecánica";
+const profesion = "Ingeniero Mecanico";
 const ubicacion = "Lima";
 const hobby = "Bailar";
 
@@ -22,10 +22,9 @@ const hobby = "Bailar";
 const profileText = `Mi nombre es ${nombre}, tengo ${edad} años y soy ${profesion}. Vivo en ${ubicacion} y en mi tiempo libre disfruto de ${hobby}.`;
 
 //💧6. Imprime el template en la vista principal de la página.
-    document.getElementById("profile-description").innerText = profileText;
+document.getElementById("profile-description").innerText = profileText;
 
-
-
+console.log(profileText);
 
 
 

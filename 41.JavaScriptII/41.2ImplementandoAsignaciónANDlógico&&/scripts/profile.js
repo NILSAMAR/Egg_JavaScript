@@ -1,21 +1,3 @@
-
-
-
-//Define cinco variables con datos personales como nombre, edad, profesión, ubicación y hobby. Un ejemplo de estas variables es:
-const nombre = "Nilsa";
-const edad = 25;
-const profesion = "Ingeniero Mecanico";
-const ubicacion = "Lima";
-const hobby = "Bailar";
-
-//Usa las variables definidas para crear un template string. Esto puede ser algo así:
-const profileText = `Mi nombre es ${nombre}, tengo ${edad} años y soy ${profesion}. Vivo en ${ubicacion} y en mi tiempo libre disfruto de ${hobby}.`;
-
-//Para mostrar el texto en la página, puedes usar JavaScript para encontrar el 
-//elemento correcto en el DOM y asignar el texto del template a ese elemento:
-
-document.getElementById("profile-description").innerText = profileText;
-
 /*-----------------------------------------------------------------------
 41.2. ✏️ Actividad: Implementando la Asignación con AND lógico (&&)
 /*-----------------------------------------------------------------------*/
